@@ -1,0 +1,53 @@
+{
+  "name": "react-rte-canvas",
+  "version": "1.0.8",
+  "description": "A React canvas drawing component with undo functionality.",
+  "exports": {
+    ".": {
+      "import": "./dist/canvas-drawing.es.js",
+      "require": "./dist/canvas-drawing.cjs.js",
+      "types": "./dist/canvas-drawing.d.ts"
+    }
+  },
+  "main": "./dist/canvas-drawing.cjs.js",
+  "module": "./dist/canvas-drawing.es.js",
+  "types": "./dist/canvas-drawing.d.ts",
+  "type": "commonjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "tslib": "^2.8.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.13.0",
+    "@types/node": "^22.9.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.3",
+    "eslint": "^9.13.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.14",
+    "globals": "^15.11.0",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.11.0",
+    "vite": "^5.4.10"
+  },
+  "keywords": [
+    "canvas",
+    "drawing",
+    "undo",
+    "React",
+    "TypeScript"
+  ],
+  "author": "Harry Tran",
+  "license": "MIT"
+}

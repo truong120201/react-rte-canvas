@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "declaration": true, // Ensure declaration files are emitted
+    "declarationDir": "dist", // Path to save .d.ts files
+    "jsx": "react-jsx", // React JSX setting
+    "outDir": "dist", // Directory for compiled files (JS)
+    "module": "esnext",
+    "target": "esnext",
+    "lib": ["dom", "esnext"],
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "composite": true
+  },
+  "include": [
+    "src/**/*", // Include all files in the src folder
+    "vite-env.d.ts" // Include Vite env types
+  ],
+  "exclude": [
+    "node_modules",
+    "dist" // Exclude node_modules and dist
+  ]
+}
